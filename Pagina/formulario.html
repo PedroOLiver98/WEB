@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <script>
+        function Enviar(){
+            var nome = document.getElementById("nomeId");
+            var email = document.getElementById("emailId");
+            var nome = document.getElementById("mensagemId");
+
+            if(nome.value != ""){
+                alert('Obrigado Sr(a). ' + nome.value + ', E-mail: ' 
+                + email.value + ' pelo envio da mensagem: ' + mensagem.value)
+            }
+        }
+    </script>
+</head>
+<body>
+
+    <form name="meu_form">
+        <p><label>Nome</label></p>
+        <p><input type="text" id="nomeId" name="nome"></p>
+        <p><label>E-mail:</label></p>
+        <p><input type="email" id="emailId" name="email"></p>
+        <p><label>Mensagem:</label></p>
+        <p><textarea id="mensagemId" name="mensagem"></textarea></p>
+        <p><input type="submit" onclick="Enviar();" value="Enviar"></p>
+        </form>
+    
+</body>
+</html>
