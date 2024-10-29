@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Template Bootstrap 06</title>
+    <!--Incorporação do Bootstrap | CSS-->
+    <link href="css/bootstrap.min.css" rel="stylesheet"
+</head>
+<body>
+    <!-- Carrossel de imagens - um slider-->
+     <div id="carrossel-de-imagens" class="carousel slide" data-bs-ride="carousel">
+        <!-- Traços marcadores -->
+         <div class="carousel-indicators">
+            <!-- primeiro marcador (ativo por padrão) -->
+             <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="0" class="active"   
+                aria-current="true" aria-label="Slide 1"></button>
+            <!-- segundo marcador: link imagem 2 -->
+             <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <!-- terceiro marcador: link imagem 3-->
+             <button type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide-to="2" aria-label="Slide 3"></button>
+         </div>
+<!-- Bloco de imagens -->
+<div class="carousel-inner">
+
+    <!-- Imagem 1 + legenda -->
+    <div class="carousel-item active">
+        <!-- Imagem 1 -->
+        <img src="img_1.png" width="1080px" height="600px" class="d-block w-100" alt="leão">
+        <!-- Legenda -->
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Imagem 01</h5>
+            <p>Exemplo de imagem.</p>
+        </div>
+    </div>
+
+    <!-- Imagem 2 + legenda -->
+    <div class="carousel-item">
+        <!-- Imagem 2 -->
+        <img src="img_2.jpg" width="1080px" height="600px" class="d-block w-100" alt="cidade">
+        <!-- Legenda -->
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Imagem 02</h5>
+            <p>Exemplo de imagem</p>
+        </div>
+    </div>
+
+    <!-- Imagem 3 + legenda -->
+    <div class="carousel-item">
+        <!-- Imagem 3 -->
+        <img src="img_3.png" width="1080px" height="600px" class="d-block w-100" alt="cidade">
+        <!-- Legenda -->
+        <div class="carousel-caption d-none d-md-block">
+            <h5>Imagem 03</h5>
+            <p>Exemplo de imagem</p>
+        </div>
+    </div>
+
+</div> <!-- Fim bloco de imagens -->
+
+        <!-- Botões de navegação -->
+         <button class="carousel-control-prev" type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Anterior</span>
+         </button>
+
+         <button class="carousel-control-next" type="button" data-bs-target="#carrossel-de-imagens" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Próximo</span>
+         </button>
+    </div>
+
+    <!-- Incorporação do Bootstrap | JS-->
+     <script src="js/bootstrap.min.js"></script>
+        
+    
+</body>
+</html>
