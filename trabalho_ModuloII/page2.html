@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Produtos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .header, .footer {
+            background-color: #000000;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+        .header nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+        }
+        .product-card {
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            margin: 10px;
+            padding: 15px;
+            text-align: center;
+            width: 200px;
+            background-color: #fff;
+        }
+        .product-card img {
+            max-width: 100%;
+            height: auto;
+            border-bottom: 1px solid #ddd;
+            margin-bottom: 10px;
+        }
+        .product-card h3 {
+            margin: 10px 0;
+        }
+        .product-card p {
+            font-size: 14px;
+            color: #666;
+        }
+        .product-card .price {
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho -->
+    <div class="header">
+        <h1>Loja Online</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="https://github.com/PedroOliver98">Contato</a>
+        </nav>
+    </div>
+
+    <!-- Seção de Produtos -->
+    <div class="products">
+        <div class="product-card">
+            <a href="produto1.html">
+                <img src="megane.png" alt="Produto 1">
+                <h3>EM MANUTENÇÃO</h3>
+                <p>Descrição em breve do produto.</p>
+                <p class="price">R$ 999,00</p>
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="produto2.html">
+                <img src="opala.png" alt="Produto 2">
+                <h3>EM MANUTENÇÃO</h3>
+                <p>Descrição EM breve do produto.</p>
+                <p class="price">R$ 999,00</p>
+            </a>
+        </div>
+        <div class="product-card">
+            <a href="produto3.html">
+                <img src="VTEC.png" alt="Produto 3">
+                <h3>EM MANUTENÇÃO</h3>
+                <p>Descrição EM breve do produto.</p>
+                <p class="price">R$ 999,00</p>
+            </a>
+        </div>
+        <!-- Pode Adcionar mais produtos se necessario. -->
+    </div>
+
+    <!-- Rodapé -->
+    <div class="footer">
+        <p>© 2024 Loja Online - Todos os direitos reservados</p>
+    </div>
+</body>
+</html>
